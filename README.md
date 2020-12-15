@@ -1,2 +1,2 @@
 # workshop101
-Html, CSS and JS first learning memories 
+Html, CSS and Js first learning memories 
