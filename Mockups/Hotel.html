@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hotel</title>
+</head>
+<body>
+    <button class="back"><a href="index.html">HOME </a></button>
+    
+        <section class="mockup">
+            <div class="container-addbook">
+                <div class="new-book-titles">
+                    <h1 class=new-book-title>Registro de Huespedes</h1>
+                    <h3 class="new-book-message">Aún no ha agregado a un nuevo huesped</h3>
+                </div>
+                <a href="#reg-book" class="add-button"><img src="add_btn.svg" alt=""></a>
+            </div>
+        </section>
+
+        <section class="mockup">
+            <div class="form">
+                <div id="reg-book" class="book-register">
+                    <h1 class="register-new-title">Registro de huesped nuevo</h1>
+
+                    <div class="upload-btn">
+                        <a href="" class="upload-book-label"><img src="huesped.svg" alt=""></a>
+                        <h4 class="btn-label">subir foto</h4>
+                    </div>
+                </div>
+
+                <form action="">
+
+                    <div class="num-select">
+                        <label for="cantidad">Tipo de ID:</label>
+                        <select name="cantidad" id="cantidad">
+                            <option value="1">Cedula de ciudadanía</option>
+                            <option value="2">Cedula extranjera</option>
+                            <option value="3">Pasaporte</option>
+                           option>
+                        </select>
+                    </div>
+
+                    <div class="text-input">
+                        <label for="titulo">Identificación:</label>
+                        <input id="titulo" type="text">
+                    </div>
+
+                    <div class="num-select">
+                        <label for="cantidad">País:</label>
+                        <select name="cantidad" id="cantidad">
+                            <option value="1">Colombia</option>
+                            <option value="2">Polombia</option>
+                            <option value="3">Cocolombia</option>
+                           option>
+                        </select>
+                    </div>
+
+                    <div class="text-input">
+                        <label for="issn">Nombres:</label>
+                        <input id="issn" type="text">
+                    </div>
+
+                    <div class="text-input">
+                        <label for="isbn">Apellidos:</label>
+                        <input id="isbn" type="text">                                        
+                    </div>
+                    
+                    <div class="text-input">
+                        <label for="editorial">Número de contacto:</label>
+                        <input id="editorial" type="text">
+                    </div>
+
+                    <div class="text-input">
+                        <label for="fechaingreso">Fecha de Ingreso:</label>
+                        <input id="fechaingreso" type="date">
+                    </div>
+
+                    <div class="text-input">
+                        <label for="fechaingreso">Fecha de Salida:</label>
+                        <input id="fechaingreso" type="date">
+                    </div>
+
+                    <div class="num-select">
+                        <label for="cantidad">Habitación:</label>
+                        <select name="cantidad" id="cantidad">
+                            <option value="1">Presidencial</option>
+                            <option value="2">Ejecutiva</option>
+                            <option value="3">Turista</option>
+                           option>
+                        </select>
+                    </div>
+
+                    <div class="num-select">
+                        <label for="cantidad">Modalidad de pago:</label>
+                        <select name="cantidad" id="cantidad">
+                            <option value="1">Efectivo</option>
+                            <option value="2">Credito</option>
+                            <option value="3">Otro</option>
+                           option>
+                        </select>
+                    </div>
+
+                    <div class="text-input">
+                        <label for="issn">Valor por día:</label>
+                        <input id="issn" type="text">
+                    </div>
+
+                    <div class="text-input">
+                        <label for="isbn">Valor total:</label>
+                        <input id="isbn" type="text">                                        
+                    </div>
+
+                                  
+
+                   
+                   <div class="buttons-reg">
+                       <input class="btn btn-register" type="submit" value="Registrar">
+                       <button class="btn btn-cancel"> <a href="">Cancelar</a></button>
+                   </div>
+
+                   
+                </form>
+
+            </div>
+           
+        </section>
+
+
+        <section class="mockup">
+            <div class="container-addbook success-border">
+                <div class="new-book-titles">
+                    <h1 class=new-book-title>¡Huesped registrado!</h1>
+                    <h3 class="new-book-message">El huesped ha sido registrado con exito.</h3>
+                </div>
+                <a href="#reg-book" class="success-button"><img src="success.svg" alt=""></a>
+            </div>
+        </section>
+        
+            
+</body>
+</html>

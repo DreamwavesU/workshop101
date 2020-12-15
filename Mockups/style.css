@@ -1,0 +1,502 @@
+/* 
+    Sintaxis de CSS
+
+        id = Identificador Único -> Aplicar a solo un elemento
+        clase = Identificador Variable -> Aplicar a varios elementos.
+
+        selector{
+            propiedad : valor;
+            propiedad2 : valor;
+        }
+        #titles{
+        }
+        .titles{
+        }
+        .main-title{
+        }
+        div.container{    
+        }
+        div.container > section.titles > h1.main-title{
+        }
+        
+
+        selectores : Etiquetas, Clases, Ides : ELEMENTOS HTML
+        especificidad : Importancia de cada uno de los elementos
+        herencia
+        combinadores
+        tipos de valor
+
+*/
+
+:root {
+    --main-color: #1E1A50;
+    --secondary-color: #4A4585;
+    --soft-color: #7E7AAB;
+    --light-color: #F0EFFF;
+    --submit-ok: #BAFFD9;
+    --submit-ok-var: #086e36;
+    --cancel-color: #93929e;
+    --success-color: #BD50FF;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    height:100vh;
+}
+
+div.body-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+div.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 80vw;
+    height: 50vh;
+}
+
+div.container>section#titles>h1.main-title {
+    width: 60%;
+    font-weight: 700;
+    font-size: 3.75rem;
+    color: var(--main-color);
+}
+
+div.container>section#titles>p.main-subtitle {
+    width: 60%;
+    font-weight: 700;
+    font-size: 2.8rem;
+    color: var(--secondary-color);
+    font-weight: 400;
+}
+
+div.container>section#exercises>div.responsive>ul {
+    list-style: none;
+}
+
+div.container>section#exercises>div.responsive>ul>li {
+    width: 400px;
+}
+
+div.container>section#exercises>div.responsive>ul>li>a {
+    font-size: 1.2rem;
+    line-height: 35px;
+    text-decoration: none;
+    color: var(--soft-color);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+div.container>section#exercises>div.responsive>ul>li>a:hover {
+    color: var(--main-color);
+}
+
+div.container>section#exercises>div.responsive>ul>li>a:hover::before {
+    content: "►";
+}
+
+/* ------------------ */
+
+/* BIBLIOTECAS */
+
+/* ADD BOOK */
+section.mockup {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.container-addbook {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 601px;
+    height: 156px;
+    background-color: var(--light-color);
+    /* box-shadow: 3px 3px 20px rgba(167, 167, 167, 0.26); */
+}
+
+.success-border{
+    border: 4px solid var(--success-color);
+}
+
+div.container-addbook>div.new-book-titles>h1.new-book-title {
+    color: var(--main-color);
+    font-size: 2.4rem;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+div.container-addbook>div.new-book-titles>h3.new-book-message {
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+    font-weight: 400;
+    width: 300px;
+    letter-spacing: 0.6px;
+}
+
+div.container-addbook>a.add-button>img {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+div.container-addbook>a.add-button>img:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+/* REGISTER BOOK FORM */
+
+div.book-register {
+    width: 100%;
+    height: 187px;
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+div.book-register>h1.register-new-title {
+    width: 200px;
+    color: var(--light-color);
+    font-size: 2.1rem;
+    letter-spacing: 0.02em;
+}
+
+div.book-register>div.upload-btn {
+    text-align: center;
+    color: var(--light-color)
+}
+
+div.book-register>div.upload-btn>h4.btn-label {
+
+    padding-top: 3.6px;
+    font-size: 0.9rem;
+    letter-spacing: 0.02em;
+
+}
+
+/* FORM */
+
+div.form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: auto;
+    width: 40%;
+    background-color: var(--light-color);
+     transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8); */ /*scale*/
+}
+
+div.form>form {
+    width: 100%;
+    height: 100%;
+    padding:50px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.form>form>div.text-input,
+div.form>form>div.num-select,
+div.form>form>div.select-category {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    padding-bottom: 20px;
+
+}
+
+div.form>form>div.text-input>label,
+div.form>form>div.num-select>label,
+div.form>form>div.select-category>label {
+    color: var(--main-color);
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+div.form>form>div.num-select>select > option{
+    font-size: 0.85rem ;
+
+}
+div.form>form>div.text-input>input,
+div.form>form>div.num-select>select,
+div.form>form>div.select-category>select {
+    width: 55%;
+    height: 45px;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    border: 3px solid var(--secondary-color);
+}
+
+div.buttons-reg {
+    margin-top: 20px;
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+
+}
+
+.btn {
+    width: 120px;
+    height: 45px;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    border: 3px solid var(--secondary-color);
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    cursor: pointer;
+}
+
+div.buttons-reg>input.btn-register {
+    background-color: var(--submit-ok);
+
+}
+
+div.buttons-reg>input.btn-register:hover {
+    background-color: var(--submit-ok-var);
+    color: var(--light-color);
+}
+
+div.buttons-reg>button.btn-cancel>a {
+    text-decoration: none;
+}
+
+div.buttons-reg>button.btn-cancel:hover {
+    background-color: var(--cancel-color);
+
+}
+
+/*Aprobbal*/
+
+
+
+/*Huesped*/
+
+/*body > section.mockup2 {
+    width: 100vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body > section.mockup2 > div.form { 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 601px;
+    height: 156px;
+    background-color: var(--light-color);
+
+} */
+
+
+nav.menu{
+    display:flex;
+    width:100vw;
+    height:80px;
+    align-self: flex-start;
+    background:var(--main-color);
+}
+
+nav.menu > ul.list-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ------------------------------------ */
+nav.menu > ul.list-menu> a:nth-child(3){
+    border:1px solid white;
+    background:var(--light-color); 
+}
+nav.menu > ul.list-menu> a:nth-child(3)>li{
+    color:var(--main-color) !important;
+}
+/* ------------------------------------ */
+
+nav.menu > ul.list-menu> a > li.list-items{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    width:200px;
+    height:80px;
+    transition: 0.2s ease-in;
+    -webkit-transition: 0.2s ease-in;
+    -moz-transition: 0.2s ease-in;
+    -ms-transition: 0.2s ease-in;
+    -o-transition: 0.2s ease-in;
+}
+
+nav.menu > ul.list-menu> a{
+    text-decoration:none;
+}
+nav.menu > ul.list-menu> a > li.list-items:hover,
+nav.menu > ul.list-menu> li.list-items > a:hover{
+    background:var(--light-color);
+    color:var(--main-color);
+    text-decoration: none;
+}
+
+
+/* AIRPORT */
+
+section.mockup2 {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+section.buy-ticket-box{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    top:100px;
+    align-self:center;
+    width:720px;
+    height:200px;
+    background:var(--soft-color);
+}
+
+div.col{
+    display: flex;
+    width:100%;
+    align-items:center;
+    justify-content:space-between;
+    padding:10px 80px;
+}
+
+div.col>div.text-input2,
+div.col>div.date-input2{
+    display:flex;
+    flex-direction: column;
+}
+
+div.col>div.text-input2>label,
+div.col>div.date-input2>label{
+    color:var(--light-color);
+    margin-bottom:5px;
+    font-weight: 700;
+    font-size: 1.05rem;
+    letter-spacing: 0.05em;
+}
+div.col>div.text-input2>input,
+div.col>div.date-input2>input{
+    height:35px;
+    width:100%;
+    padding:15px 5px;
+}
+
+div.col>div.btn-add-flight{
+    padding:7px 7px;
+    width:67%;
+    border: 1px dashed var(--light-color);
+    cursor:pointer;
+}
+
+div.col>div.btn-add-flight>h2.add-flight-title{
+    font-size: 1rem;
+    color:var(--light-color);
+}
+
+div.col>div.row>div.passenger-btn{
+    border: 1px solid var(--light-color);
+}
+
+section.mockup > h1{ 
+    color: var(--main-color);
+}
+
+
+/* VOTACION */
+div.vote-box{
+    color: var(--main-color);    
+    width: 550px;
+    text-align: center;
+}
+div.vote-box > div.candidates{
+    
+    display: flex;  
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+    margin:20px;
+}
+
+
+button.back{
+
+    font-size: 15px;
+    padding: 12px;
+    position: fixed;
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

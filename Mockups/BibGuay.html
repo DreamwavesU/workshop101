@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Biblioteca</title>
+</head>
+<body>
+    <button class="back"><a href="index.html">HOME </a></button>
+
+        <section class="mockup">
+            <div class="container-addbook">
+                <div class="new-book-titles">
+                    <h1 class=new-book-title>Agregar nuevo libro</h1>
+                    <h3 class="new-book-message">Aún no has agregado un libro a tu biblioteca</h3>
+                </div>
+                <a href="#reg-book" class="add-button"><img src="add_btn.svg" alt=""></a>
+            </div>
+        </section>
+
+        <section class="mockup">
+            <div class="form">
+
+                <div id="reg-book" class="book-register">
+                    <h1 class="register-new-title">Registro de nuevo libro</h1>
+
+                    <div class="upload-btn">
+                        <a href="" class="upload-book-label"><img src="up-layer.svg" alt=""></a>
+                        <h4 class="btn-label">subir portada</h4>
+                    </div>
+                </div>
+
+                <form action="">
+
+                    <div class="text-input">
+                        <label for="titulo">Título</label>
+                        <input id="titulo" type="text">
+                    </div>
+
+                    <div class="text-input">
+                        <label for="autor">Autor</label>
+                        <input id="autor" type="text">
+                    </div>
+
+                    <div class="text-input">
+                        <label for="issn">ISSN</label>
+                        <input id="issn" type="text">
+                    </div>
+
+                    <div class="text-input">
+                        <label for="isbn">ISBN</label>
+                        <input id="isbn" type="text">                                        
+                    </div>
+                    
+                    <div class="text-input">
+                        <label for="editorial">Editorial</label>
+                        <input id="editorial" type="text">
+                    </div>
+
+                    <div class="num-select">
+                        <label for="cantidad">Cantidad</label>
+                        <select name="cantidad" id="cantidad">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+
+                   <div class="select-category">
+                        <label for="category">Categoria</label>
+                        <select name="category" id="category">
+                            <option value="">Seleccione</option>
+                            <option value="terror">Terror</option>
+                            <option value="cienciaficción">Ciencia Ficción</option>
+                            <option value="drama">Drama</option>
+                            <option value="historia">Historia</option>
+                            <option value="stem">STEM</option>   
+                        </select>
+                   </div>  
+                   
+                   <div class="buttons-reg">
+                       <input class="btn btn-register" type="submit" value="Registrar">
+                       <button class="btn btn-cancel"> <a href="">Cancelar</a></button>
+                   </div>
+                </form>
+
+            </div>
+
+                
+
+        </section>
+
+        <section class="mockup">
+            <div class="container-addbook success-border">
+                <div class="new-book-titles">
+                    <h1 class=new-book-title>¡Libro Registrado!</h1>
+                    <h3 class="new-book-message">Su libro ha sido agregado con éxito a la biblioteca.</h3>
+                </div>
+                <a href="#reg-book" class="success-button"><img src="success.svg" alt=""></a>
+            </div>
+        </section>
+
+    
+    
+</body>
+</html>
+
